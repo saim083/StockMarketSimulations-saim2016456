@@ -14,12 +14,13 @@ import singleton.SoldShares;
 public class StockMarketSimulations {
 
     public static void userMenu(){
+    	//Options to Select
         System.out.println("To Find Company with the highest capital press :1:\n"
                          + "To Find Company with the lowest capital press :2:\n"
                          + "To Find Investor with the highest number of shares press :3:\n"
                          + "To Find Investor with the lowest number of shares press :4:\n"
                          + "To Sell Shares Press :5:\n"
-                         + "FOR EXIT PRESS :0:");
+                         + "FOR EXIT PRESS :0:");  
     }
     public static void main(String args[]){
         
@@ -38,7 +39,6 @@ public class StockMarketSimulations {
             if(input.equals("1")){
          
                 System.out.println("Company with the Highest Capital");
-               
                  Collections.sort(Companies, new Comparator<Company>() {
 
             public int compare(Company c1, Company c2) {
